@@ -4,17 +4,15 @@ A production-ready Retrieval-Augmented Generation (RAG) system for Vietnam trave
 
 ![Data Upload Success](demonstration_images/image_showing_data_uploaded_to_pincode_and_neo4j_from_terminal.png)
 
-## 🚀 Key Features
+##  Key Features
 
-- **🔍 Hybrid Search**: Combines vector similarity (Pinecone) with graph relationships (Neo4j)
-- **🤖 AI Chat Interface**: Interactive conversational system with OpenRouter/GPT integration
-- **⚡ Performance Optimized**: Embedding caching, async processing, and intelligent result summarization
-- **📊 Rich Data**: 360+ Vietnam travel items across 10 cities with semantic relationships
-- **🏗️ Production Ready**: Error handling, connection pooling, and scalable architecture
+- ** Hybrid Search**: Combines vector similarity (Pinecone) with graph relationships (Neo4j)
+- ** AI Chat Interface**: Interactive conversational system with OpenRouter/GPT integration
+- ** Performance Optimized**: Embedding caching, async processing, and intelligent result summarization
+- ** Rich Data**: 360+ Vietnam travel items across 10 cities with semantic relationships
+- ** Production Ready**: Error handling, connection pooling, and scalable architecture
 
-## 📊 System Architecture
-
-![Pinecone Index](demonstration_images/pinecode_index_introduction.png)
+##  System Architecture
 
 ### Hybrid RAG Pipeline
 ```
@@ -23,7 +21,7 @@ User Query → Embedding Cache → Vector Search (Pinecone) ↘
 Neo4j Graph ← Relationship Traversal ← Top Results ↗
 ```
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 vietnam-travel-rag/
@@ -32,7 +30,7 @@ vietnam-travel-rag/
 │   ├── full_graph_structure.png
 │   ├── single_graph.png
 │   └── multiple_graphs_structure.png
-├── hybrid_chat.py                 # 🎯 Main AI chatbot (async + caching)
+├── hybrid_chat.py                 # Main AI chatbot (async + caching)
 ├── rag_system.py                  # Basic RAG implementation
 ├── pinecone_upload.py             # Vector database upload
 ├── neo4j_upload.py               # Graph database upload
@@ -43,7 +41,7 @@ vietnam-travel-rag/
 └── README.md                     # This file
 ```
 
-## 🛠️ Quick Start
+##  Quick Start
 
 ### 1. Clone & Install
 ```bash
@@ -73,7 +71,7 @@ python hybrid_chat.py           # Standard mode
 python hybrid_chat.py --async   # High-performance async mode
 ```
 
-## 🎯 Usage Examples
+## Usage Examples
 
 ### Interactive Chat
 ```
@@ -100,7 +98,7 @@ response = chatbot.chat("cultural temples and historical sites")
 print(response)
 ```
 
-## 🏗️ Technical Architecture
+## Technical Architecture
 
 ### Database Infrastructure
 ![Neo4j Graph Structure](demonstration_images/full_graph_structure.png)
@@ -111,12 +109,12 @@ print(response)
 
 ### Advanced Features
 
-#### 🧠 Intelligent Caching
+####  Intelligent Caching
 - In-memory embedding cache for repeated queries
 - O(1) lookup time for cached embeddings
 - Significant performance improvement for common travel questions
 
-#### ⚡ Async Processing  
+#### Async Processing  
 - Concurrent vector and graph database operations
 - 30% faster response times through parallel processing
 - Non-blocking I/O for better resource utilization
@@ -126,12 +124,12 @@ print(response)
 - Dynamic summary based on cities, types, and relationships
 - Enhanced user experience with immediate feedback
 
-#### 🎯 Chain-of-Thought Reasoning
+#### Chain-of-Thought Reasoning
 - Structured 4-step AI reasoning process
 - Explainable recommendations with clear logic
 - Domain-specific travel expertise integration
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 - **Response Time**: ~200ms for cached queries
 - **Throughput**: Supports multiple concurrent users
@@ -139,7 +137,7 @@ print(response)
 - **Cost Optimization**: 90% reduction using local embeddings
 - **Data Scale**: 360 items, 370+ relationships
 
-## 🔧 Configuration
+## Configuration
 
 ### Required API Keys
 ```python
@@ -162,7 +160,7 @@ cp .env.example .env
 # Edit .env with your credentials
 ```
 
-## 🎨 Visualizations
+## Visualizations
 
 ### Single Graph Node Structure
 ![Single Graph](demonstration_images/single_graph.png)
@@ -170,7 +168,7 @@ cp .env.example .env
 ### Multiple Connected Graphs
 ![Multiple Graphs](demonstration_images/multiple_graphs_structure.png)
 
-## 📋 Requirements
+## Requirements
 
 - **Python**: 3.8+
 - **Pinecone**: Vector database account
@@ -178,7 +176,7 @@ cp .env.example .env
 - **OpenRouter/OpenAI**: LLM API access
 - **Dependencies**: See `requirements.txt`
 
-## 🚀 Advanced Usage
+## Advanced Usage
 
 ### Async Mode for High Performance
 ```bash
@@ -201,14 +199,14 @@ for query in queries:
     result = chatbot.chat(query)
 ```
 
-## 🔍 Data Sources
+## Data Sources
 
 - **10 Vietnamese Cities**: Ho Chi Minh City, Hanoi, Da Nang, Nha Trang, Hoi An, Hue, Can Tho, Dalat, Phu Quoc, Sapa
 - **Travel Categories**: Attractions, Hotels, Activities, Restaurants
 - **Rich Metadata**: Descriptions, locations, tags, relationships
 - **Semantic Relationships**: Geographic, categorical, and experiential connections
 
-## 🛡️ Production Features
+## Production Features
 
 - **Error Handling**: Comprehensive exception management
 - **Connection Pooling**: Efficient database resource usage
@@ -217,13 +215,13 @@ for query in queries:
 - **Security**: API key management and validation
 - **Scalability**: Async architecture for concurrent users
 
-## 📚 Documentation
+## Documentation
 
 - **[improvements.md](improvements.md)**: Detailed technical improvements and architecture decisions
 - **Code Comments**: Extensive inline documentation
 - **Type Hints**: Clear function signatures and return types
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create feature branch (`git checkout -b feature/amazing-feature`)
@@ -231,11 +229,11 @@ for query in queries:
 4. Push to branch (`git push origin feature/amazing-feature`)
 5. Open Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **Pinecone** for vector database infrastructure
 - **Neo4j** for graph database capabilities  
@@ -245,4 +243,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Built with ❤️ for intelligent travel recommendations**
+**Built with  for intelligent travel recommendations**
