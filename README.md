@@ -63,8 +63,8 @@ cp config.example.py config.py
 ```bash
 python pinecone_upload.py  # Upload 360 items to vector database
 python neo4j_upload.py     # Create knowledge graph with relationships
-![Data Upload Success](demonstration_images/image_showing_data_uploaded_to_pincode_and_neo4j_from_terminal.png)
 ```
+![Data Upload Success](demonstration_images/image_showing_data_uploaded_to_pincode_and_neo4j_from_terminal.png)
 
 ### 4. Start Chatbot
 ```bash
